@@ -3,9 +3,10 @@ import { useState, useMemo } from "react";
 import Card from "../../components/Card/Card";
 import Pagination from "../../components/Pagination/Pagination";
 import cardsData from "../../utils/data/cards.json";
+import { useDeck } from "../../components/Game/DeckContext";
 
 const Cards = () => {
-  const [selectedCards, setSelectedCards] = useState([]);
+  const { state, dispatch } = useDeck();
   const [page, setPage] = useState(1);
   const cardsPerPage = 10;
   const totalPages = Math.ceil(cardsData.length / cardsPerPage);
@@ -17,12 +18,12 @@ const Cards = () => {
   }, [page]);
 
   const handleSelect = (card) => {
-    const isAlreadySelected = selectedCards.some(c => c.id === card.id);
+    const isAlreadySelected = state.deck.some(c => c.id === card.id);
 
     if (isAlreadySelected) {
-      setSelectedCards(selectedCards.filter(c => c.id !== card.id));
-    } else if (selectedCards.length < 6) {
-      setSelectedCards([...selectedCards, card]);
+      dispatch({ type: "REMOVE_CARD", payload: card.id });
+    } else if (state.deck.length < 6) {
+        dispatch({ type: "ADD_CARD", payload: card });
     }
   };
 
@@ -31,10 +32,10 @@ const Cards = () => {
       <div className="deck-section">
         <h2>Tu mazo:</h2>
         <div className="deck-grid">
-          {selectedCards.length === 0 ? (
+          {state.deck.length === 0 ? (
             <p className="empty-msg">Aún no has elegido cartas</p>
           ) : (
-            selectedCards.map(card => (
+            state.deck.map(card => (
               <Card
                 key={card.id}
                 card={card}
@@ -54,7 +55,7 @@ const Cards = () => {
               key={card.id}
               card={card}
               onSelect={handleSelect}
-              isSelected={selectedCards.some(c => c.id === card.id)}
+              isSelected={state.deck.some(c => c.id === card.id)}
             />
           ))}
         </div>

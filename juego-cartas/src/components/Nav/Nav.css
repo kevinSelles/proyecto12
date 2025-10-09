@@ -21,3 +21,9 @@
   border-bottom: 6px solid var(--accent);
   padding-bottom: 0.2rem;
 }
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

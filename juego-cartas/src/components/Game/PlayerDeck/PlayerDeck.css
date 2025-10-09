@@ -1,0 +1,18 @@
+.player-deck {
+  background: rgba(255,255,255,0.03);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.player-deck-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.player-deck .hint {
+  margin-top: 8px;
+  color: #bbb;
+  font-size: 0.9rem;
+}
