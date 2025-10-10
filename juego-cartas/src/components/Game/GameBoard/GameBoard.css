@@ -1,43 +1,45 @@
 .game-board-grid {
   display: grid;
   grid-template-columns: repeat(3, 140px);
-  grid-template-rows: repeat(3, 140px);
+  grid-template-rows: repeat(3, 190px);
   gap: 12px;
   padding: 12px;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.137);
   border-radius: 10px;
+  justify-content: center;
 }
 
 .game-cell {
-  background: rgba(255,255,255,0.03);
-  border: 2px dashed rgba(255,255,255,0.06);
+  position: relative;
+  background: rgba(255, 255, 255, 0.185);
+  border: 2px dashed rgba(255, 255, 255, 0.137);
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 5 / 7;
   width: 140px;
-  height: 140px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  cursor:pointer;
-  overflow:hidden;
+  height: auto;
 }
 
 .game-cell img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 
 .game-cell.player {
-  box-shadow: 0 0 0 3px rgba(0,150,255,0.08);
+  box-shadow: 0 0 0 3px rgba(0, 149, 255, 0.274);
 }
 
 .game-cell.cpu {
-  box-shadow: 0 0 0 3px rgba(255,80,80,0.06);
+  box-shadow: 0 0 0 3px rgba(255, 80, 80, 0.192);
 }
 
 .placeholder {
   width: 70%;
   height: 70%;
   border-radius: 6px;
-  background: rgba(255,255,255,0.02);
+  background: rgba(255, 255, 255, 0.178);
 }
