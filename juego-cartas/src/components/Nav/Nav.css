@@ -1,16 +1,20 @@
 .nav {
   font-family: "Bebas Neue", sans-serif;
   font-size: 35px;
-  height: 5vh;
+  flex: 0 0 3dvh;
   display: flex;
   justify-content: space-evenly;
   background-color: transparent;
-  padding: 0.2rem;
 }
 
 .nav-link {
   color: var(--text-light);
   transition: color 0.2s ease;
+  text-shadow: 
+    -1px -1px 0 #000000,
+     1px -1px 0 #000000,
+    -1px  1px 0 #000000,
+     1px  1px 0 #000000;
 }
 
 .nav-link:hover {
@@ -26,4 +30,22 @@
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .nav {
+    padding-top: 1rem;
+  }
 }

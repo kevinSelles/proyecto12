@@ -1,6 +1,6 @@
 .header {
   font-family: "Audiowide", sans-serif;
-  height: 15vh;
+  flex: 0 0 15dvh;
   background-color: transparent;
   color: #ffde59;
   text-align: center;
@@ -11,4 +11,17 @@
      3px -3px 0 #806600,
     -3px  3px 0 #806600,
      3px  3px 0 #806600;
+}
+
+@media (max-width: 490px) {
+  .header {
+    font-size: 1.5rem;
+    height: 13dvh;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    font-size: 1.4rem;
+  }
 }

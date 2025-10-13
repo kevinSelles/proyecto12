@@ -1,8 +1,32 @@
 .footer {
   background-color: var(--footer-bg);
   color: var(--text-light);
-  height: 5vh;
+  flex: 0 0 5dvh;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-size: 0.9rem;
+}
+
+@media (max-width: 950px) {
+  .footer {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .footer {
+    height: 7dvh;
+  }
+}
+
+@media (max-width: 340px) {
+  .footer {
+    padding: 0.5rem 0.5rem;
+  }
 }

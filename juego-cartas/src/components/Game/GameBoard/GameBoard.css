@@ -1,10 +1,10 @@
 .game-board-grid {
   display: grid;
-  grid-template-columns: repeat(3, 140px);
-  grid-template-rows: repeat(3, 190px);
+  grid-template-columns: repeat(3, 130px);
+  grid-template-rows: repeat(3, 180px);
   gap: 12px;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.137);
+  background: rgba(255, 255, 255, 0.11);
   border-radius: 10px;
   justify-content: center;
 }
@@ -20,7 +20,7 @@
   cursor: pointer;
   overflow: hidden;
   aspect-ratio: 5 / 7;
-  width: 140px;
+  width: 130px;
   height: auto;
 }
 

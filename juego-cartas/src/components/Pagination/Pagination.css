@@ -7,12 +7,12 @@
 }
 
 .pagination button {
-  background: none;
-  border: 1px solid var(--accent);
+  background: rgba(0, 0, 0, 0.747);
+  border: 3px solid var(--accent);
   color: var(--accent);
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -25,4 +25,13 @@
 .pagination button:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 20px;
+  text-shadow: 
+    -1px -1px 0 #000000,
+     1px -1px 0 #000000,
+    -1px  1px 0 #000000,
+     1px  1px 0 #000000;
 }

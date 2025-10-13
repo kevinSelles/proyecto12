@@ -18,6 +18,7 @@
 }
 
 body {
+  height: 100dvh;
   background-image: url("https://res.cloudinary.com/damjp56im/image/upload/v1759882966/ring_bipxyc.webp");
   background-size: cover;
   color: var(--text-light);

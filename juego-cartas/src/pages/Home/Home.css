@@ -9,3 +9,9 @@
   -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
   mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  .home-img {
+    padding-top: 1rem;
+  }
+}
