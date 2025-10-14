@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&display=swap');
 
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 :root {
-  --header-bg: #1c1f26;
-  --nav-bg: #272b33;
-  --footer-bg: #1c1f26;
-  --text-light: #f1f1f1;
-  --accent: #f4c542;
-  --bg-main: #0f1218;
+  --size-small: 0.5rem;
+  --size-medium: 1rem;
+  --size-large: 2rem;
+  
+  --color-1: whitesmoke;
+  --color-2: #f4c542;
+  --color-3: rgb(29, 29, 29);
+  --color-4: rgba(0, 0, 0, 0.603);
 }
 
 * {
@@ -21,6 +36,6 @@ body {
   height: 100dvh;
   background-image: url("https://res.cloudinary.com/damjp56im/image/upload/v1759882966/ring_bipxyc.webp");
   background-size: cover;
-  color: var(--text-light);
+  color: var(--color-1);
   font-family: "Poppins", sans-serif;
 }

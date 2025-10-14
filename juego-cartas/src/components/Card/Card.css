@@ -6,7 +6,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.2s ease, border-color 0.3s ease;
-  background-color: whitesmoke;
+  background-color: var(--color-1);
 }
 
 .card:hover {
@@ -14,8 +14,8 @@
 }
 
 .card.selected {
-  border-color: var(--accent);
-  box-shadow: 0 0 8px var(--accent);
+  border-color: var(--color-2);
+  box-shadow: 0 0 8px var(--color-2);
 }
 
 @media (max-width: 755px) {
@@ -33,5 +33,13 @@
 @media (max-width: 450px) {
   .card {
     max-width: 90px;
+  }
+}
+
+@media (max-width: 1400px) and (max-height: 800px) {
+
+  .card {
+    height: 150px;
+    width: 100px;
   }
 }

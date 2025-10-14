@@ -1,21 +1,26 @@
 .footer {
-  background-color: var(--footer-bg);
-  color: var(--text-light);
+  background-color: var(--color-3);
+  color: var(--color-1);
   flex: 0 0 5dvh;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: var(--size-medium) var(--size-large);
   font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--color-1);
+  font-weight: bold;
 }
 
 @media (max-width: 950px) {
   .footer {
-    padding: 0.5rem 2rem;
+    padding: var(--size-small) var(--size-large);
   }
 }
 
 @media (max-width: 520px) {
   .footer {
-    padding: 0.5rem 1rem;
+    padding: var(--size-small) var(--size-medium);
   }
 }
 
@@ -27,6 +32,6 @@
 
 @media (max-width: 340px) {
   .footer {
-    padding: 0.5rem 0.5rem;
+    padding: var(--size-small);
   }
 }

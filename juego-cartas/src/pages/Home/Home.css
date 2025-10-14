@@ -1,17 +1,30 @@
 .home {
   height: 75vh;
-  padding-top: 1rem;
+  padding-top: var(--size-medium);
 }
 
 .home-img {
   height: 100%;
   width: 100%;
-  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: 
+    linear-gradient(to right, transparent, black 5%, black 95%, transparent),
+    linear-gradient(to bottom, black 90%, transparent);
+  -webkit-mask-composite: intersect;
+  mask-image: 
+    linear-gradient(to right, transparent, black 5%, black 95%, transparent),
+    linear-gradient(to bottom, black 90%, transparent);
+  mask-composite: intersect;
 }
 
 @media (max-width: 1024px) and (max-height: 600px) {
   .home-img {
-    padding-top: 1rem;
+    padding-top: var(--size-medium);
+  }
+}
+
+@media (max-width: 1400px) and (max-height: 800px) {
+  .home {
+    height: 60dvh;
+    padding: 0;
   }
 }

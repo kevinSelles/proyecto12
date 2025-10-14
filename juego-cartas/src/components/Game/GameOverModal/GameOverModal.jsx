@@ -11,7 +11,7 @@ const GameOverModal = ({ winner }) => {
   const getMessage = () => {
     return winner === "player"
       ? "¡Has ganado la partida! 🎉"
-      : "La CPU ha ganado 😢";
+      : "La IA ha ganado 😢";
   };
 
   return (

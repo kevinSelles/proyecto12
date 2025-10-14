@@ -2,7 +2,7 @@
   font-family: "Audiowide", sans-serif;
   flex: 0 0 15dvh;
   background-color: transparent;
-  color: #ffde59;
+  color: var(--color-2);
   text-align: center;
   padding-top: 0.8rem;
   font-size: 1.6rem;

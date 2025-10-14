@@ -1,7 +1,7 @@
 .gameover-modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: var(--color-4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,9 +9,9 @@
 }
 
 .modal-content {
-  background: white;
-  padding: 2rem 3rem 0 3rem;
-  border-radius: 1rem;
+  background: var(--color-1);
+  padding: var(--size-large) 3rem 0 3rem;
+  border-radius: var(--size-medium);
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   display: flex;
@@ -26,10 +26,10 @@
 .modal-content button {
   padding: 0.7rem 1.5rem;
   background: #0078ff;
-  color: white;
+  color: var(--color-1);
   border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
+  border-radius: var(--size-small);
+  font-size: var(--size-medium);
   cursor: pointer;
   transition: background 0.2s ease-in-out;
 }
@@ -39,6 +39,13 @@
 }
 
 .modal-img {
-  padding-top: 1rem;
+  padding-top: var(--size-medium);
   height: 200px;
+}
+
+@media (max-width: 450px) {
+  
+  .modal-content {
+    width: 90%;
+  }
 }
