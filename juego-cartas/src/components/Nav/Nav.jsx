@@ -28,7 +28,6 @@ const Nav = () => {
         )}
       <Tooltip visible={visible && disabled} text="Selecciona 6 cartas antes de jugar" />
       </div>
-
       <NavLink to="/reglas" className="nav-link">Reglas</NavLink>
     </nav>
   );
