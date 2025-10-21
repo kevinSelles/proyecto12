@@ -6,7 +6,7 @@ La interfaz es completamente **responsive**, adaptándose tanto a pantallas gran
 
 ---
 
-## 🚀 Características principales
+## 🟢 Características principales
 
 - **Gestión de mazo**: permite añadir o eliminar cartas hasta un máximo de seis.
 - **Vista dividida**: el mazo se muestra a la izquierda y la colección a la derecha (o en vertical en móviles).
@@ -26,7 +26,7 @@ El proyecto está construido íntegramente en **frontend** con las siguientes li
 | **react** | ^19.1.1 | Librería principal. |
 | **react-dom** | ^19.1.1 | Renderizado de componentes. |
 | **react-router-dom** | ^7.9.3 | Para navegación entre páginas. |
-| **lucide-react** | ^0.545.0 | Iconos SVG ligeros y personalizables para React. (No requerido para aprobar el proyecto, pero usado voluntariamente para practicar con
+| **lucide-react** | ^0.545.0 | Iconos SVG ligeros y personalizables para React. (No requerido para el proyecto. Usado para practicar con
 librerías nuevas)|
 
 > 💡 *No se utiliza ningún backend ni servidor de datos: toda la información (cartas, estados del mazo, etc.) se gestiona en el frontend mediante contexto y JSON local
