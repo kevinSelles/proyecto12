@@ -9,6 +9,7 @@ La interfaz es completamente **responsive**, adaptándose tanto a pantallas gran
 ## 🟢 Características principales
 
 - **Gestión de mazo**: permite añadir o eliminar cartas hasta un máximo de seis.
+- **I.A. básica**: La CPU dispone de unos parámetros básicos, pero efectivos, para dificultar las partidas. 
 - **Vista dividida**: el mazo se muestra a la izquierda y la colección a la derecha (o en vertical en móviles).
 - **Diseño responsive**: reorganiza el grid y los contenedores según el tamaño de la pantalla.
 - **Renderizado dinámico** de las cartas y paginación para recorrer la colección.
